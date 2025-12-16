@@ -26,6 +26,11 @@
   <link href="https://ik.imagekit.io/mustofa/web/seller/logo/favicon-artoprinting.png" rel="icon" type="image/png"/>
   <script crossorigin="anonymous" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js">
   </script>
+  <script>
+    let url = new URL(window.location.href);
+    let param = url.searchParams.get("to");
+    window.namaTamu = decodeURIComponent(param.replace(/\+/g, " "));
+  </script>  
   <title>
    Maul &amp; Rinjani | Dekeku
   </title>
@@ -164,7 +169,7 @@
       <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
        Hai
        <br/>
-       <span class="data-nama">
+       <span class="data-nama"><script>document.write(window.namaTamu)</script>
        </span>
       </p>
      </div>
@@ -257,7 +262,7 @@
         <p data-aos="fade-up" data-aos-delay="900" data-aos-duration="1200">
          Hai
          <br/>
-         <span class="data-nama">
+         <span class="data-nama"><script>document.write(window.namaTamu)</script>
          </span>
         </p>
         <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -1005,7 +1010,7 @@ Terima kasih.
       Kepada Yth.
      </p>
      <h3 class="person-name small">
-      <span class="data-nama">
+      <span class="data-nama"><script>document.write(window.namaTamu)</script>
       </span>
      </h3>
     </div>
@@ -1015,7 +1020,7 @@ Terima kasih.
      <p>
      </p>
      <h3 class="person-name large">
-      <span class="data-nama">
+      <span class="data-nama"><script>document.write(window.namaTamu)</script>
       </span>
      </h3>
      <p>
